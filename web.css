@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 130%;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 115px;
+  background-color: #fff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  top: 0; /* Shift header up 115px */
+  left: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: medium;
+  color: #111;
+  margin-top: 115px;
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+}
+
+h1 {
+  margin: 20px;
+  padding-top: 20px;
+  text-align: left;
+}
+
+p {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+#logo {
+  width: 250px;
+}
+
+.flex_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: stretch;
+  gap: 10px;
+  background-color: transparent;
+  min-width: min-content;
+  margin: 15px;
+}
+
+.flex_container .flex_container {
+  flex-direction: column;
+  gap: 40px;
+  background-color: #ddd;
+  max-width: min-content;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 1203px) {
+  #video1 {
+    max-height: 180px;
+  }
+
+  #video1big {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1204px) {
+  #video1 {
+    display: none;
+  }
+
+  #video1big {
+    max-height: 360px;
+  }
+}
+
+.flex_item {
+  flex: 1;
+  background-color: #bbb;
+  min-width: 320px;
+  padding: 10px;
+}
+
+nav .flex_container {
+  gap: 15px;
+}
+
+.nav_item {
+  flex: 1;
+  text-align: center;
+  background-color: #ccc;
+  border-style: solid;
+  border-radius: 4px;
+  border-color: #333;
+  border-width: 2px;
+  width: 100%;
+  height: 100%;
+}
+
+.nav_item a:visited {
+  color: #111;
+}
+
+.nav_item:hover {
+  background-color: #ddd;
+}
+
+.nav_item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+form.flex_item {
+  background-color: #ccc;
+  vertical-align: top;
+  width: 320px;
+}
+
+.button_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-content: center;
+  gap: 5px;
+  padding-top: 5px;
+}
+
+input[type=submit].button,
+input[type=reset].button,
+input[type=button] {
+  font-weight: bold;
+  padding: 5px;
+}
+
+#form1 {
+  line-height: 190%;
+}
+
+#instructions {
+  font-weight: bold;
+  color: #a42020;
+}
+
+#dark_button {
+  float: right;
+  padding: 15px;
+  margin: 10px;
+}

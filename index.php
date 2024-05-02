@@ -1,3 +1,7 @@
+---
+layout: post
+title: Login
+---
 <!DOCTYPE html>
 <html>
 <head>
